@@ -1,0 +1,80 @@
+/* Frame 2 */
+.main-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  gap: 50px;
+  background: #211F1F;
+  height: 100%;
+}
+
+/* Inside auto layout */
+/* flex: none;
+order: 0;
+flex-grow: 0; */
+
+/* You found my backpack! */
+.title {
+
+  font-family: 'Karantina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 76px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  margin: 0;
+}
+
+/* 
+
+ Inside auto layout 
+flex: none;
+order: 1;
+flex-grow: 0;
+ */
+
+/* Glenn, →Traveler → Weirdo → QR-code enthusiast */
+
+.body-container {
+  width: 100%;
+}
+
+.body-text {
+
+  font-family: 'Karantina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 61px;
+
+  color: #FFFFFF;
+
+  margin: 0;
+
+}
+
+.body-text > p {
+  margin: 0;
+  padding-left: 0.5em;
+}
+
+.icon-container {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 70px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  color: #FFFFFF;
+}
