@@ -1,18 +1,15 @@
 import "./App.css"
-// import { useLocation } from "react-router"
+import { useLocation } from "react-router"
 
 function App() {
-  // let location = useLocation();
-  // let state = location.state;
+  let location = useLocation();
+  let state = location.state;
 
-  // console.log("state: ", state);
-
-  // let item;
-  // if (state && state.item)
-  //   item = state.item;
-  // else
-  //   item = "something...";
-  let item = "backpack";
+  let item;
+  if (state && state.item)
+    item = state.item;
+  else
+    item = "website";
 
   return (
     <div className="main-frame">
