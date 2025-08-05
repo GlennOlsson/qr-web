@@ -17,7 +17,7 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/backp0" element={<Navigate to="/" replace />} />
+        <Route path="/backp0" element={<Navigate to="/" replace state={{item: "backpack"}} />} />
         <Route path="*" element={<NoPath />} />
       </Routes>
     </BrowserRouter>

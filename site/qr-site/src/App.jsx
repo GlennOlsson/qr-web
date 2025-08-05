@@ -1,9 +1,15 @@
-import './App.css'
+import "./App.css"
+import { useLocation } from "react-router-dom"
 
 function App() {
+  let location = useLocation();
+  let item = location.state.item ? props.item : "something...";
+
+  console.log("Item: ", item);
   return (
     <>
-      Welcome, fellow nerds
+      You found my {item}
+      Glenn; Traveler, weirdo, self-proclaimed QR code enthusiast
     </>
   )
 }
