@@ -3,9 +3,16 @@ import { useLocation } from "react-router"
 
 function App() {
   let location = useLocation();
-  let item = location.state.item ? location.state.item : "something...";
+  let state = location.state;
 
-  console.log("Item: ", item);
+  console.log("state: ", state);
+
+  let item;
+  if (state && state.item)
+    item = state.item;
+  else
+    item = "something...";
+
   return (
     <>
       You found my {item}
