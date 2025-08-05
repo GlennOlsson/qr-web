@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom"
 
 function App() {
   let location = useLocation();
-  let item = location.state.item ? props.item : "something...";
+  let item = location.state.item ? location.state.item : "something...";
 
   console.log("Item: ", item);
   return (
