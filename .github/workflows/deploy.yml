@@ -27,24 +27,24 @@ jobs:
         with:
           node-version: "22"
           cache: "npm"
-          cache-dependency-path: "site/qr-site/package-lock.json"
+          cache-dependency-path: "qr-site/package-lock.json"
 
       - name: Install dependencies
-        working-directory: site/qr-site
+        working-directory: qr-site
         run: npm install
 
       - name: Build
-        working-directory: site/qr-site
+        working-directory: qr-site
         run: npm run build
 
       - name: Create 404.html
-        working-directory: site/qr-site/dist
+        working-directory: qr-site/dist
         run: cp index.html 404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "site/qr-site/dist"
+          path: "qr-site/dist"
 
   deploy:
     environment:
