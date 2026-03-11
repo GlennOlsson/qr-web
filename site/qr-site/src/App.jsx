@@ -34,6 +34,9 @@ function App() {
           </div>
         </div>
       </div>
+      <a href="https://bingo.gl1.se" className="bingo-button">
+        Glenn's Bingo
+      </a>
       <div className="icon-container">
         <a href="https://instagr.am/glennminusgbg">
           <div className="icon">

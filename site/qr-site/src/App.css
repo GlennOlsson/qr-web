@@ -77,3 +77,25 @@ flex-grow: 0;
   display: flex;
   color: #FFFFFF;
 }
+
+.bingo-button {
+  font-family: 'Karantina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 49px;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #FF6B9D 0%, #FFA502 100%);
+  border: 3px solid #FFFFFF;
+  padding: 20px 60px;
+  border-radius: 15px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.bingo-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 107, 157, 0.4);
+}
