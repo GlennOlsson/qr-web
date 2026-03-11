@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="main-frame">
       <p className="title">
-        You found my {item}!
+        You found my {item}, shithead!
       </p>
       <div className="body-container">
         <div>
